@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Glow — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Glow.">
+<style>
+:root{color-scheme:light;--bg:#f7f7f4;--card:#fff;--text:#20211f;--muted:#666861;--accent:#355c4a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}
+main{max-width:860px;margin:48px auto;padding:0 24px 64px}.card{background:var(--card);border:1px solid #e2e3dd;border-radius:18px;padding:44px;box-shadow:0 8px 30px rgba(0,0,0,.04)}
+h1{font-size:2.4rem;line-height:1.15;margin:0 0 8px}h2{font-size:1.35rem;margin-top:2.2em;line-height:1.3}
+.meta{color:var(--muted);margin-bottom:32px}p,li{font-size:1rem}ul{padding-left:1.4rem}strong{color:#171815}
+a{color:var(--accent)}code{background:#eef0eb;padding:.12em .35em;border-radius:5px}
+@media(max-width:600px){main{margin:20px auto;padding:0 12px 32px}.card{padding:26px 20px}h1{font-size:2rem}}
+</style>
+</head>
+<body>
+<main><article class="card">
+<h1>Glow — Privacy Policy</h1>
+<div class="meta"><strong>Last updated: 29 September 2026</strong></div>
+<p>Glow is a food, movement, water, step and weight tracker, with a journal and a check-in. It is built so that your data has nowhere to go. This policy explains what Glow stores, where it stores it, and what it never does with it.</p>
+<h2>The short version</h2>
+<p>Everything you record in Glow stays on your phone. Glow has no account, no sign-in, and no server of ours to sign in to.</p>
+<p>There is one thing Glow can send, and it only ever does so because you asked it to: if you look a barcode up online, that barcode is sent to Open Food Facts. Nothing else is ever transmitted.</p>
+<h2>What Glow stores</h2>
+<p>Glow stores the records you create and the settings you choose:</p>
+<ul>
+<li>your age, height, weight, biological sex and typical activity level</li>
+<li>food entries, movement sessions, weigh-ins and body measurements</li>
+<li>water intake</li>
+<li>step counts, from the phone's step counter and from any figures you type in</li>
+<li>a daily check-in: your mood, your energy, and a note if you write one</li>
+<li>journal entries, and any goals you set for yourself</li>
+<li>your display preferences (kilograms or pounds, water goal, step goal) and any reminders you have switched on</li>
+</ul>
+<p>This is stored in a database on your device, using Android's standard app-private storage.</p>
+<p>Glow also ships with a list of 2,639 packaged foods and their nutrition, held on the device so a barcode can be looked up without a connection. This is reference data that came with the app; it is not anything you entered, and "Delete everything" leaves it alone.</p>
+<h2>Barcode lookups</h2>
+<p>The "Add food" sheet has a barcode field. You can type the digits, or point the camera at the barcode and let Glow read them. Either way:</p>
+<ul>
+<li><strong>First, Glow looks on the device.</strong> The list of common products is bundled with the app, and this step makes no network request at all.</li>
+<li><strong>Only if that fails, and only if you tap "Look it up online", does Glow make a request.</strong> Nothing is looked up in the background, on a schedule, or on its own initiative.</li>
+</ul>
+<p>When you do ask for an online lookup, Glow sends the barcode digits to <code>world.openfoodfacts.org</code> and receives the product's nutrition in return. That is the whole request. Glow does not send your weight, your other food entries, your measurements, your water, your steps, your journal, your profile, an account identifier, or an advertising identifier, and Open Food Facts does not receive them.</p>
+<h2>The camera</h2>
+<p>Glow asks for camera access for one purpose: reading the digits off a barcode. The request is made at the moment you tap "Scan", never when the app opens, and the food sheet keeps working from the keyboard if you decline it.</p>
+<p>No picture is taken, kept, uploaded or sent. The scanner reads digits from the camera preview and shuts down as soon as it has them; there is no image file, no gallery access, and no storage permission behind it. The barcode-reading model ships inside the app, so scanning works with no connection and with no Google Play Services present.</p>
+<h2>Step counting</h2>
+<p>If you turn on step tracking, Glow asks for Android's activity-recognition permission, which is required from Android 10 for the step-counter sensor. That permission lets Glow read a <strong>step count and nothing else</strong>: not your location, not the route, not which rooms you were in. The phone's own sensor produces the number; the phone's own location service is never consulted.</p>
+<p>You can decline, and you can withdraw the permission later in Android settings. Nothing in Glow depends on it: steps can be typed in by hand instead, and the two are stored as separate figures so a pedometer reading can never overwrite something you entered. Steps are kept on the device with the rest of your records, are included in an export you ask for, and are removed by "Delete everything".</p>
+<p>Open Food Facts is an independent, volunteer-run, non-commercial project. The request necessarily reveals your IP address to them, as any request to any web service does. If you would rather not send anything, do not tap the button: the offline list and typing the calories yourself both work with no connection at all, and every other part of Glow is unaffected by any of this.</p>
+<h2>What Glow does not do</h2>
+<ul>
+<li><strong>It sends nothing you did not ask it to send, and here is the whole list.</strong> The barcode lookup above is one request, and it happens only when you tap. There is a second one: when a scanned product has a photograph, Glow fetches that image when you open the result — automatically, without a second tap. The request goes to whichever host published the photograph, which is often the retailer's own servers rather than Open Food Facts', so your network can see that you scanned that product. The image is held in memory only. It is never written to your device, never stored with your data, and never included in an export. Everything else Glow does is local.</li>
+<li><strong>It has no analytics, no crash reporting, and no advertising identifier.</strong></li>
+<li><strong>It has no account and no sign-in.</strong> There is no server of ours to authenticate against.</li>
+<li><strong>It does not access your location, contacts or microphone.</strong> The camera is described above: one use, no image retained. No location permission is declared at all, and the step counter never consults one.</li>
+<li><strong>It does not read your files</strong> beyond the single file you explicitly pick when you use import or export.</li>
+<li><strong>It runs two things in the background</strong>, and each can be switched off individually: the reminders you turn on yourself, and — only if you turn step counting on — one foreground service that holds the pedometer open so steps keep being counted with Glow closed. Android requires a persistent notification for that, and the notification carries a <strong>Turn off</strong> action. It reads that one hardware sensor. It sends nothing. No location permission is declared for it, and it starts again after a reboot or an update only if you have left step counting switched on.</li>
+</ul>
+<h2>Export and import</h2>
+<p>Glow can write a copy of your data to a JSON file at a location you choose, and can read one back. Both happen through a file picker you are looking at, on the device. Glow does not upload an export anywhere, and it does not send an export to itself. An exported file is a plain JSON document: readable by you, and by anyone else you choose to give it to.</p>
+<p>Importing replaces what is currently in Glow with the contents of the file, and Glow asks you to confirm that before anything is replaced.</p>
+<h2>Deleting your data</h2>
+<p>"You → Your data → Delete everything" removes every record and preference from the device. Uninstalling the app removes them too. There is no copy anywhere else, so there is nothing further to delete.</p>
+<h2>Health information</h2>
+<p>Food intake, weight and body measurements are health information. It stays on your device, and it is yours. A barcode is not health information: it identifies a product, and the only one that is ever sent anywhere is the one you choose to look up.</p>
+<p>Glow supports adults. The energy and BMI formulas it uses are validated for adults. Glow is a wellness and self-tracking tool. It is not a medical device, it does not diagnose, and it is not a substitute for professional medical advice. Please do not use it to manage a medical condition.</p>
+<h2>South Africa</h2>
+<p>Glow is built for people in South Africa, and the design here is deliberate rather than incidental: the app has no account, no server, no analytics and no advertising identifier, so the organisation operating it holds no personal information about anyone who uses it. The weight, meals and measurements that make up the health information described above are processed on your own device by you, and are never transmitted to the developer or to anyone else.</p>
+<p>One thing does cross the border, and only when you ask it to: the barcode digits you choose to look up online, sent to Open Food Facts. A barcode on its own identifies a product rather than a person, and Glow sends nothing alongside it that could connect it to you or to your records, so the request carries no personal information with it. Your internet service provider and Open Food Facts are separate organisations with their own obligations; neither is the developer.</p>
+<p>If you would prefer that nothing crossed the border at all, do not tap the button. The offline product list, the calculator, the log, the export and everything else in Glow work with no connection, permanently.</p>
+<h2>Children</h2>
+<p>Glow is not intended for anyone under 18, and it is not directed at children.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be published at the same address, with the date at the top changed to show when it was last revised.</p>
+<h2>Contact</h2>
+<p>Questions about this policy or about Glow can be sent to <a href="mailto:gawiethirion0812@gmail.com">gawiethirion0812@gmail.com</a>, which is also the address listed on the Google Play listing for Glow.</p>
+</article></main>
+</body></html>
